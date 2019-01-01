@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 /* стили контейнера слайдера */
@@ -73,4 +74,15 @@
     color: #B87878;
     margin-top: 15px;
     margin-left: 17px;
+}
+
+.slick-slider .slick-slide{
+    display: none;
+}
+ .slick-slider .slick-slide:first-child{
+    display: block;
+}
+.slick-initialized.slick-slider .slick-slide,
+.slick-initialized.slick-slider .slick-slide:first-child{
+    display: block;
 }

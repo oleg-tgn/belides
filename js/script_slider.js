@@ -4,9 +4,13 @@
 //     slidesToScroll: 3
 // });
 
-$('.single-slide').slick({
-  infinite: false,
-  slidesToShow: 4,
-  dots: true,
-  slidesToScroll: 4,
-});
+$('.single-slide')
+    .on('init', function(event, slick) {
+       $('.js-before-load').fadeOut(3000);
+    })
+    .slick({
+      infinite: false,
+      slidesToShow: 4,
+      dots: true,
+      slidesToScroll: 4,
+    });
