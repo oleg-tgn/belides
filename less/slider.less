@@ -1,60 +1,101 @@
-/* стили контейнера со слайдером (можно убрать) */
-.slider_block{
+@import "vars.less";
+
+.slider_block {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-/* стили контейнера слайдера */
-.slick_slider{
+.slick_slider {
     width: 100%;
     max-width: 1128px;
     height: 436px;
+
+    @media @tablet {
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+        width: 100%;
+    }
+
+    @media @mobile {
+        height: auto;
+    }
 }
 
-/* ___СВОЙСТВА ДЛЯ ТЕКСТА НАД СЛАЙДЕРОМ___ */
-/* стили контейнера подписи к слайдеру */
-.name_and_line{
-  
+.name_and_line {  
     margin-top: 17px;
-    margin-left: 108px;
     margin-bottom: 50px;
+
+    @media @desktop {
+        margin-left: 108px;
+    }
 }
-/* линия над подписью */
-.line{
+
+.line {
     width: 230px;
     height: 1px;
     background: #9791A0;
     margin-bottom: 16px;
 }
-/* стили подписи */
-.name_category{
-    width: 422px;
-    height: 29px;
+
+.name_category {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     font-size: 24px;
     color: #B87878;
+
+    @media @desktop {
+        width: 422px;
+        height: 29px;
+    }
 }
 
-/* ___СВОЙСТВА ДЛЯ СЛАЙДЕРА___ */
-/* блок со стилями для каждого слайда */
-.slide_block{
+.slide_block {
     position: relative;
-    width: 250px;
-    height: 340px;
-    background: #fff;
+    background: #F6F0E9;
+
+    @media @desktop {
+        width: 25rem;
+        height: 34rem;
+    }
+
+    @media @tablet {
+        position: relative;
+        width: 18rem;
+        height: 30rem;
+        background: #fff;
+    }
+
+    @media @mobile {
+        position: relative;
+        width: 16.5rem;
+        height: 26rem;
+        background: #fff;
+    }
 }
-/* свойства картинок слайдов */
-.slide_img{
-    width: 250px;
-    height: 250px;
+
+.slide_img {
+    @media @desktop {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    @media @tablet {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    @media @mobile {
+        width: 16.5rem;
+        height: 16.5rem;
+    }
 }
-/* стили для шрифта наименования товара */
-.slide_name{
+
+.slide_name {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
@@ -64,8 +105,8 @@
     margin-top: 17px;
     margin-left: 17px;
 }
-/* стили для шрифта стоимости товара */
-.price{
+
+.price {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
@@ -76,13 +117,150 @@
     margin-left: 17px;
 }
 
-.slick-slider .slick-slide{
-    display: none;
+.slick-prev,
+.slick-next
+{
+    top: 36%;
+    box-shadow: 0px 0px 10px #9791A0;
+    border-radius: 20px;
+    width: 49px;
+    height: 31px;
+    background-color: white;
 }
- .slick-slider .slick-slide:first-child{
-    display: block;
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    background: inherit;
+    background-color: #ffffff;
+    /*настройки при наведении*/
 }
-.slick-initialized.slick-slider .slick-slide,
-.slick-initialized.slick-slider .slick-slide:first-child{
-    display: block;
+
+.slick-prev:before,
+.slick-next:before
+{
+    line-height: 0;
+    opacity: .85;
+    color: white;
+}
+
+.slick-prev
+{
+    left: 1px;
+    z-index: 5;
+    background: #FFFFFF;
+
+    @media @tablet, @mobile {
+        left: -1.5rem;
+    }
+}
+
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+
+.slick-prev:before
+{
+    content: url(../img/icons/arrow-left.svg);/*    */
+    margin-right: 25px;
+}
+
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: 1px;
+    z-index: 5;
+    background: #FFFFFF;
+
+    @media @tablet, @mobile {
+        right: -1.5rem;
+    }
+}
+
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+
+.slick-next:before
+{
+    content: url(../img/icons/arrow-right.svg);
+    margin-right: -25px;
+}
+
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+.slick-dots
+{ 
+    top: -68px;
+    right: 75px;
+    text-align: right;
+    
+    @media @mobile {
+        top: -3rem;
+        right: 0;
+    }
+}
+.slick-dots li
+{
+    width: 22px;
+    height: 20px;
+    margin: 0 4px;
+    padding: 0;
+}
+
+.slick-dots li button:before
+{
+    font-size: 8px;
+    line-height: 7.5px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #9791A0;
+    box-sizing: border-box;
+    border-radius: 50%;
+    content: '';
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before
+{
+    opacity: .85;
+    content: '';
+    background-color: #9791A0;;
+}
+
+.slick-track
+{
+    left: 15px;
+
+    @media @tablet, @mobile {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: block;
+    }
+}
+
+.slick-slide {
+    img {
+        @media @tablet, @mobile {
+            display: inline-block;
+            width: 100%;
+        }
+    }
 }

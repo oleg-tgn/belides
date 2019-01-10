@@ -1,3 +1,5 @@
+@import "vars.less";
+
 * {
     padding: 0;
     margin: 0;
@@ -11,10 +13,26 @@ div {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    background: #F6F0F2;
+    font-size: 10px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 .container {
-   width: 100%;
-   max-width: 1100px; 
-   margin: 0 auto;
+    width: 100%;
+    max-width: 1100px; 
+    margin: 0 auto;
+
+    @media @tablet, @mobile {
+      padding: 2.5rem 2.5rem;
+    }
 }
 
 .before-load {
@@ -23,7 +41,7 @@ div {
   top: 0; /*положение элемента сверху*/
   right: 0; /*положение элемента справа*/
   bottom: -20px; /*положение элемента снизу*/
-  background: #e5e5e5; /*цвет заднего фона блока*/
+  background: #F6F0F2; /*цвет заднего фона блока*/
   z-index: 1001; /*располагаем его над всеми элементами на странице*/
 }
 

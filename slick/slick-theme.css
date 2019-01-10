@@ -100,7 +100,7 @@
 }
 .slick-prev:before
 {
-    content: url(../img/icons/arrow-left.svg);/*    */
+    content: url(../../img/arrow/left.svg);/*    */
     margin-right: 25px;
 }
 [dir='rtl'] .slick-prev:before
@@ -125,7 +125,7 @@
 }
 .slick-next:before
 {
-    content: url(../img/icons/arrow-right.svg);
+    content: url(../../img/arrow/right.svg);
     margin-right: -25px;
 }
 [dir='rtl'] .slick-next:before

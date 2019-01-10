@@ -1,0 +1,80 @@
+@import "vars.less";
+
+.delivery {
+    display: inline-block;
+    width: 100%;
+
+    @media @desktop {
+        margin-top: 100px;
+        margin-bottom: 120px;
+    }
+
+    @media @tablet {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__line {
+        width: 150px;
+        height: 1px;
+        background: #9791A0;
+    }
+
+    &__title {
+        width: 365px;
+        height: 29px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 24px;
+        color: #925757;
+        padding-top: 15px;
+    }
+
+    &__column {
+        @media @desktop {
+            float: left;
+            width: 463px;
+
+            &:nth-child(4) {
+                float: right;
+            }
+        }
+
+        @media @tablet {
+            width: 100%;
+        }
+    }
+
+    &__item {
+        position: relative;
+        list-style-type: none;
+    }
+
+    &__subtitle {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 20px;
+        color: #925757;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    &__icon {
+        position: absolute;
+        left: -69px;
+    }
+
+    &__paragraph {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 16px;
+        color: #293844;
+        margin-bottom: 15px;
+    }
+}
