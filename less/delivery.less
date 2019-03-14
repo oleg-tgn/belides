@@ -20,7 +20,7 @@
         background: #9791A0;
     }
 
-    &__title {
+    h2 {
         width: 365px;
         height: 29px;
         font-family: Montserrat;
@@ -37,8 +37,8 @@
             float: left;
             width: 463px;
 
-            &:nth-child(4) {
-                float: right;
+            &_left {
+                margin-right: 15rem;
             }
         }
 
@@ -47,12 +47,12 @@
         }
     }
 
-    &__item {
+    li {
         position: relative;
         list-style-type: none;
     }
 
-    &__subtitle {
+    h3 {
         font-family: Montserrat;
         font-style: normal;
         font-weight: 300;
@@ -63,12 +63,7 @@
         margin-bottom: 20px;
     }
 
-    &__icon {
-        position: absolute;
-        left: -69px;
-    }
-
-    &__paragraph {
+    p {
         font-family: Montserrat;
         font-style: normal;
         font-weight: 300;
@@ -78,3 +73,22 @@
         margin-bottom: 15px;
     }
 }
+
+.icon-delivery {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    left: -69px;
+}
+
+.icon-car { background-image: url('../img/delivery/delivery.svg'); }
+.icon-time { background-image: url('../img/delivery/time.svg'); }
+.icon-repeat { background-image: url('../img/delivery/repeat.svg'); }
+.icon-geo { background-image: url('../img/delivery/geo.svg'); }
+.icon-gift { background-image: url('../img/delivery/gift.svg'); }
+.icon-card { background-image: url('../img/delivery/card.svg'); }
+.icon-rub { background-image: url('../img/delivery/rub.svg'); }
+.icon-clock { background-image: url('../img/delivery/clock.svg'); }

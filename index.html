@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header header_main">
         <div class="container">
             <div class="header__main">
                 <div class="header__contact">
@@ -24,7 +24,7 @@
                 <div class="header__slogan">
                     Заказ цветов в Москве с доставкой
                 </div>
-                <div class="header__logo">
+                <div class="header__logo header__logo_main">
                     <a href="index.html" class="header__logo-link">
                         <img src="img/icons/logo.svg" alt="" class="header__logo-image">
                     </a>
@@ -34,51 +34,34 @@
     </header>
     <section class="content">                
         <div class="container">
-            <div class="products slider_block">       
-                <div class="slick_slider">  
-                    <div class="name_and_line">
-                        <div class="line"></div>
-                        <div class="name_category">Популярные букеты</div>
-                    </div>            
-                    <div class="before-load js-before-load">
-                      <div class="loader"></div>
-                    </div> 
-                    <div class="single-slide" id='single-slide-popular'>
-                        <div>
-                            <div class="slide_block">
-                               <div class="slide_img"><img src="img/categories/popular/popular-1.jpg" alt="img product"></div>
-                               <div class="slide_name">Наименование товара</div>
-                               <div class="price">2250 р.</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide_block">
-                               <div class="slide_img"><img src="img/categories/popular/popular-2.jpg" alt="img product"></div>
-                               <div class="slide_name">Наименование товара</div>
-                               <div class="price">2250 р.</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide_block">
-                               <div class="slide_img"><img src="img/categories/popular/popular-3.jpg" alt="img product"></div>
-                               <div class="slide_name">Наименование товара</div>
-                               <div class="price">2250 р.</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide_block">
-                               <div class="slide_img"><img src="img/categories/popular/popular-4.jpg" alt="img product"></div>
-                               <div class="slide_name">Наименование товара</div>
-                               <div class="price">2250 р.</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide_block">
-                               <div class="slide_img"><img src="img/categories/popular/popular-2.jpg" alt="img product"></div>
-                               <div class="slide_name">Наименование товара</div>
-                               <div class="price">2250 р.</div>
-                            </div>
-                        </div>
+            <div class="products-home">
+                <div class="products-home__title">Популярные букеты</div>
+                         
+                <div class="products-home__list">
+                    <div class="product-home">
+                       <div class="product-home__img"><img src="img/categories/popular/popular-1.jpg" alt="img product"></div>
+                       <div class="product-home__name">Наименование товара</div>
+                       <div class="product-home__price">2250 р.</div>
+                    </div>
+                    <div class="product-home">
+                       <div class="product-home__img"><img src="img/categories/popular/popular-2.jpg" alt="img product"></div>
+                       <div class="product-home__name">Наименование товара</div>
+                       <div class="product-home__price">2250 р.</div>
+                    </div>
+                    <div class="product-home">
+                       <div class="product-home__img"><img src="img/categories/popular/popular-3.jpg" alt="img product"></div>
+                       <div class="product-home__name">Наименование товара</div>
+                       <div class="product-home__price">2250 р.</div>
+                    </div>
+                    <div class="product-home">
+                       <div class="product-home__img"><img src="img/categories/popular/popular-4.jpg" alt="img product"></div>
+                       <div class="product-home__name">Наименование товара</div>
+                       <div class="product-home__price">2250 р.</div>
+                    </div>
+                    <div class="product-home">
+                       <div class="product-home__img"><img src="img/categories/popular/popular-2.jpg" alt="img product"></div>
+                       <div class="product-home__name">Наименование товара</div>
+                       <div class="product-home__price">2250 р.</div>
                     </div>
                 </div>
             </div>
@@ -350,57 +333,57 @@
     <section class="delivery">
         <div class="container">
             <div class="delivery__line"></div>
-            <h2 class="delivery__title">Условия доставки и оплаты</h2>
-            <div class="delivery__column">
-                <h3 class="delivery__subtitle">Доставка:</h3>
-                <ul class="delivery__list">                       
-                    <li class="delivery__item">
-                        <span class="delivery__icon"><img src="img/delivery/delivery.svg" alt=""></span>
-                        <p class="delivery__paragraph">Доставка по городу Москва (в пределах МКАД) — в трех часовом интервале осуществляется <u>бесплатно с 9 утра до 00 ночи</u>.</p>
-                        <p class="delivery__paragraph">Цена доставки за пределы города устанавливается в зависимости от расстояния.</p>
+            <h2>Условия доставки и оплаты</h2>
+            <div class="delivery__column delivery__column_left">
+                <h3>Доставка:</h3>
+                <ul>                       
+                    <li>
+                        <i class="icon-delivery icon-car"></i>
+                        <p>Доставка по городу Москва (в пределах МКАД) — в трех часовом интервале осуществляется <u>бесплатно с 9 утра до 00 ночи</u>.</p>
+                        <p>Цена доставки за пределы города устанавливается в зависимости от расстояния.</p>
                     </li>
-                    <li class="delivery__item">
-                        <span class="delivery__icon"><img src="img/delivery/time.svg" alt=""></span>
-                        <p class="delivery__paragraph">Доставка осуществляется в интервале 3 часа. Время доставки <u>24 часа в сутки</u>.</p>
-                        <p class="delivery__paragraph">Ожидание получателя букета курьером до 15 минут. Повторная доставка осуществляется с доплатой за выезд курьера.</p>
+                    <li>
+                        <i class="icon-delivery icon-time"></i>
+                        <p>Доставка осуществляется в интервале 3 часа. Время доставки <u>24 часа в сутки</u>.</p>
+                        <p>Ожидание получателя букета курьером до 15 минут. Повторная доставка осуществляется с доплатой за выезд курьера.</p>
                     </li>
-                    <li class="delivery__item">
-                        <span class="delivery__icon"><img src="img/delivery/repeat.svg" alt=""></span>
-                        <p class="delivery__paragraph">При отказе от повторной доставки, оплата не возвращается, и взимается в полном объёме в виду компенсации затрат по данному заказу.</p>
+                    <li>
+                        <i class="icon-delivery icon-repeat"></i>
+                        <p>При отказе от повторной доставки, оплата не возвращается, и взимается в полном объёме в виду компенсации затрат по данному заказу.</p>
                     </li>                     
                 </ul>
                     
-                <h3 class="delivery__subtitle">Мы можем:</h3>
-                <ul class="delivery__list">                       
-                    <li class="delivery__item">
-                        <span class="delivery__icon"><img src="img/delivery/geo.svg" alt=""></span>
-                        <p class="delivery__paragraph">Доставить букет без адреса и времени.<br>
+                <h3>Мы можем:</h3>
+                <ul>                       
+                    <li>
+                        <i class="icon-delivery icon-geo"></i>
+                        <p>Доставить букет без адреса и времени.<br>
                         Доставить в любое учреждение: гостиница, больница и др.
                         </p>                        
                     </li>
-                    <li class="delivery__item">
-                        <span class="delivery__icon"><img src="img/delivery/gift.svg" alt=""></span>
-                        <p class="delivery__paragraph">Доставка осуществляется в интервале 3 часа. Время доставки <u>24 часа в сутки</u>.</p>
-                        <p class="delivery__paragraph">Приложить к цветам ваш подарок.<br>
+                    <li>
+                        <i class="icon-delivery icon-gift"></i>
+                        <p>Доставка осуществляется в интервале 3 часа. Время доставки <u>24 часа в сутки</u>.</p>
+                        <p>Приложить к цветам ваш подарок.<br>
                         Согласовать иные индивидуальные условия сюрприза.</p>
                     </li>                                        
                 </ul>
             </div>
 
-             <div class="delivery__column">
-                <h3 class="delivery__subtitle">Оплата:</h3>
-                <ul class="delivery__list"> 
-                    <li class="delivery__item">
-                        <span class="delivery__icon"><img src="img/delivery/rub.svg" alt=""></span>
-                        <p class="delivery__paragraph">Наличными курьеру - если вы получатель букета, вы можете оплатить свой заказ наличными при получении. На усмотрение сервиса на некоторые букеты потребуется частичная предоплата в размере до 30%.</p>
+            <div class="delivery__column">
+                <h3>Оплата:</h3>
+                <ul> 
+                    <li>
+                        <i class="icon-delivery icon-rub"></i>
+                        <p>Наличными курьеру - если вы получатель букета, вы можете оплатить свой заказ наличными при получении. На усмотрение сервиса на некоторые букеты потребуется частичная предоплата в размере до 30%.</p>
                     </li>
-                    <li class="delivery__item">
-                        <span class="delivery__icon"><img src="img/delivery/card.svg" alt=""></span>
-                        <p class="delivery__paragraph">Сбербанк перевод.<br><br><br></p>
+                    <li>
+                        <i class="icon-delivery icon-card"></i>
+                        <p>Сбербанк перевод.<br><br><br></p>
                     </li>
-                    <li class="delivery__item">
-                        <span class="delivery__icon"><img src="img/delivery/clock.svg" alt=""></span>
-                        <p class="delivery__paragraph">Стоимость доставки к точному времени 200 рублей.<br>
+                    <li>
+                        <i class="icon-delivery icon-clock"></i>
+                        <p>Стоимость доставки к точному времени 200 рублей.<br>
                         Доставка в ночное время 300 рублей.</p>
                     </li>                     
                 </ul>

@@ -1,0 +1,40 @@
+@import "vars.less";
+
+.breadcrumbs {
+    display: inline-block;
+    font-size: 0;
+
+    &__item {
+        display: inline-block;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 14px;
+        text-decoration-line: underline;
+        color: #44515B;
+
+        &:not(:last-child) {
+            padding-right: 2rem;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background: url(../img/icons/arrow-breadcrumbs.svg);
+                width: 6px;
+                height: 4px;
+                background-size: contain;
+                background-repeat: repeat-x;
+            }
+        }
+
+        &:not(:first-child) {
+            padding-left: 1.6rem;
+        }
+    }
+}

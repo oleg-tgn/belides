@@ -11,7 +11,7 @@ gulp.task('less', function () {
     return gulp.src('./less/**/*.less')
         .pipe(less())
         .pipe(concat('style.css'))
-        .pipe(minifyCss())
+        //.pipe(minifyCss())
         .pipe(gulp.dest('./css/'));
 });
 
