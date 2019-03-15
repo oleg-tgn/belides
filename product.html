@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belides</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <title>Belides</title>   
     <script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -33,88 +32,243 @@
                 <li class="breadcrumbs__item">Наименование товара</li>
             </ul>
             <section class="product-wrap">
-                <div class="product-preview">
-                    <div class="product-preview__main">
-                        <img src="img/product/product.png" class="product-preview__main-image">
+                <div class="product-wrap__column-first">
+                    <div class="product-preview">
+                        <div class="product-preview__main">
+                            <img src="img/product/product.png" class="product-preview__main-image">
+                        </div>
+                        <ul class="product-preview__list">
+                            <li class="product-preview__list-item">
+                                <a href="#"><img src="img/product/product.png" class="product-preview__small-image"></a></li>
+                            <li class="product-preview__list-item">
+                                <a href="#"><img src="img/product/product.png" class="product-preview__small-image"></a></li>
+                            <li class="product-preview__list-item">
+                                <a href="#"><img src="img/product/product.png" class="product-preview__small-image"></a></li>
+                            <li class="product-preview__list-item">
+                                <a href="#"><img src="img/product/product.png" class="product-preview__small-image"></a></li>
+                            <li class="product-preview__list-item">
+                                <a href="#"><img src="img/product/product.png" class="product-preview__small-image"></a></li>
+                        </ul>
                     </div>
-                    <ul class="product-preview__list">
-                        <li class="product-preview__list-item">
-                            <a href="#"><img src="img/product/product.png" class="product-preview__small-image"></a></li>
-                        <li class="product-preview__list-item">
-                            <a href="#"><img src="img/product/product.png" class="product-preview__small-image"></a></li>
-                        <li class="product-preview__list-item">
-                            <a href="#"><img src="img/product/product.png" class="product-preview__small-image"></a></li>
-                        <li class="product-preview__list-item">
-                            <a href="#"><img src="img/product/product.png" class="product-preview__small-image"></a></li>
-                        <li class="product-preview__list-item">
-                            <a href="#"><img src="img/product/product.png" class="product-preview__small-image"></a></li>
-                    </ul>
                 </div>
-                <div class="product-info">
-                    <h1 class="product-info__title">Наименование товара</h1>
-                    <h2 class="product-info__subtitle">Подзаголовок товара</h2>
+                <div class="product-wrap__column-second">
+                    <div class="product-info">
+                        <h1 class="product-info__title">Наименование товара</h1>
+                        <h2 class="product-info__subtitle">Подзаголовок товара</h2>
 
-                    <div class="product-settings">
-                        <div class="product-settings__column">
-                            <div class="product-settings__title">Высота розы, см</div>
-                            <ul class="product-settings__list">
-                                <li class="product-settings__item"><a href="#"  class="product-settings__link">50</a></li>
-                                <li class="product-settings__item"><a href="#" class="product-settings__link">60</a></li>
-                                <li class="product-settings__item active"><a href="#" class="product-settings__link">70</a></li>
-                                <li class="product-settings__item"><a href="#" class="product-settings__link">80</a></li>
-                            </ul>
+                        <div class="product-settings">
+                            <div class="product-settings__column">
+                                <div class="product-settings__title">Высота розы, см</div>
+                                <ul class="product-settings__list">
+                                    <li class="product-settings__item"><a href="#"  class="product-settings__link">50</a></li>
+                                    <li class="product-settings__item"><a href="#" class="product-settings__link">60</a></li>
+                                    <li class="product-settings__item active"><a href="#" class="product-settings__link">70</a></li>
+                                    <li class="product-settings__item"><a href="#" class="product-settings__link">80</a></li>
+                                </ul>
+                            </div>
+                            <div class="product-settings__column">
+                                <div class="product-settings__title">Упаковка</div>
+                                <ul class="product-settings__list">
+                                    <li class="product-settings__item"><a href="#" class="product-settings__link">Ленточка</a></li>
+                                    <li class="product-settings__item active"><a href="#" class="product-settings__link">Красивая упаковка (+300р.)</a></li>
+                                    <li class="product-settings__item"><a href="#" class="product-settings__link">Корзинка (+500р.)</a></li>
+                                </ul>
+                            </div>
+                            <div class="product-settings__column">
+                                <div class="product-settings__title">Добавить зелень?</div>
+                                <ul class="product-settings__list">
+                                    <li class="product-settings__item active"><a href="#" class="product-settings__link">Нет</a></li>
+                                    <li class="product-settings__item"><a href="#" class="product-settings__link">Немного (+100р.)</a></li>
+                                    <li class="product-settings__item"><a href="#" class="product-settings__link">Побольше (+300р.)</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="product-settings__column">
-                            <div class="product-settings__title">Упаковка</div>
-                            <ul class="product-settings__list">
-                                <li class="product-settings__item"><a href="#" class="product-settings__link">Ленточка</a></li>
-                                <li class="product-settings__item active"><a href="#" class="product-settings__link">Красивая упаковка (+300р.)</a></li>
-                                <li class="product-settings__item"><a href="#" class="product-settings__link">Корзинка (+500р.)</a></li>
-                            </ul>
-                        </div>
-                        <div class="product-settings__column">
-                            <div class="product-settings__title">Добавить зелень?</div>
-                            <ul class="product-settings__list">
-                                <li class="product-settings__item active"><a href="#" class="product-settings__link">Нет</a></li>
-                                <li class="product-settings__item"><a href="#" class="product-settings__link">Немного (+100р.)</a></li>
-                                <li class="product-settings__item"><a href="#" class="product-settings__link">Побольше (+300р.)</a></li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <div class="product-info__description">
-                        <div class="product-gift">
-                            <span class="product-gift__image-wrap">
-                                <img src="img/icons/product-gift.svg" class="product-gift__image">
-                            </span>
-                            <p class="product-gift__text">
-                                К каждому букету прилагается Ваша записка и средство по уходу 
-                                <strong>бесплатно</strong>.
-                            </p>
+                        <div class="product-info__description">
+                            <div class="product-info__description-left">
+                                <div class="product-image-point">
+                                    <span class="product-image-point__image-wrap">
+                                        <img src="img/icons/product-gift.svg" class="product-image-point__image">
+                                    </span>
+                                    <p class="product-image-point__text">
+                                        К каждому букету прилагается Ваша записка и средство по уходу 
+                                        <strong class="product-image-point__strong">бесплатно</strong>.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product-review-top">
+                                <a href="#" class="product-review-top__link">Отзывы (6)</a>
+                                <ul class="product-review-top__stars">
+                                    <li class="product-review-top__stars-item">
+                                        <img src="img/icons/star-dark.svg" class="product-review-top__stars-image">
+                                    </li>
+                                    <li class="product-review-top__stars-item">
+                                        <img src="img/icons/star-dark.svg" class="product-review-top__stars-image">
+                                    </li>
+                                    <li class="product-review-top__stars-item">
+                                        <img src="img/icons/star-dark.svg" class="product-review-top__stars-image">
+                                    </li>
+                                    <li class="product-review-top__stars-item">
+                                        <img src="img/icons/star-dark.svg" class="product-review-top__stars-image">
+                                    </li>
+                                    <li class="product-review-top__stars-item">
+                                        <img src="img/icons/star-light.svg" class="product-review-top__stars-image">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="product-review-top">
-                            <a href="#" class="product-review-top__link">Отзывы (6)</a>
-                            <ul class="product-review-top__stars">
-                                <li class="product-review-top__stars-item">
-                                    <img src="img/icons/star-dark.svg" class="product-review-top__stars-image">
-                                </li>
-                                <li class="product-review-top__stars-item">
-                                    <img src="img/icons/star-dark.svg" class="product-review-top__stars-image">
-                                </li>
-                                <li class="product-review-top__stars-item">
-                                    <img src="img/icons/star-dark.svg" class="product-review-top__stars-image">
-                                </li>
-                                <li class="product-review-top__stars-item">
-                                    <img src="img/icons/star-dark.svg" class="product-review-top__stars-image">
-                                </li>
-                                <li class="product-review-top__stars-item">
-                                    <img src="img/icons/star-light.svg" class="product-review-top__stars-image">
-                                </li>
-                            </ul>
+
+                        <div class="product-info__price-wrap">
+                            <span class="product-info__price">2250 р.</span>
+                            <span class="product-info__btn">
+                                <a href="#" class="btn btn_dark">В корзину</a>
+                            </span>                        
                         </div>
+                    </div>  
+                </div>    
+
+                <div class="product-wrap__column-first">
+                     <div class="product-image-point">
+                        <span class="product-image-point__image-wrap">
+                            <img src="img/icons/product-delivery.svg" class="product-gift__image">
+                        </span>
+                        <p class="product-image-point__text">
+                            Доставка в пределах МКАД в диапазоне трех часов <strong class="product-image-point__strong">бесплатна</strong>.<br> Иные способы и стоимость доставки можно узнать в разделе Доставка и оплата или у менеджера.
+                        </p>
                     </div>
-                </div>                
+                </div>
+                <div class="product-wrap__column-second">   
+                    <div class="product-info-text">
+                        <div class="product-info-text__title">На фото:</div>  
+                        <p class="product-info-text__paragraph">красная роза высотой 60 см (101 шт.) в красивой упаковке  </p>
+                        <div class="product-info-text__title">Состав букета:</div>  
+                        <ul class="product-info-text__list">
+                            <li class="product-info-text__list-item">101 отборная красная роза, выбранной высоты;</li>
+                            <li class="product-info-text__list-item">зелень (по желанию);</li>
+                            <li class="product-info-text__list-item">красивая упаковка или корзина (по желанию).</li>
+                        </ul>
+                    </div>
+                </div>  
             </section>
+        </div>
+
+        <div class="container">
+            <div class="products-home-wrap">
+                <div class="content-title">Популярные букеты</div>                         
+                <div class="products-home-wrap__list js-slick-products">
+                    <div class="product-home">
+                       <div class="product-home__img"><img src="img/categories/popular/popular-1.jpg" alt="img product"></div>
+                       <div class="product-home__description">
+                           <div class="product-home__name">Наименование товара</div>
+                           <div class="product-home__price">2250 р.</div>
+                           <div class="product-home__btn-wrap">
+                               <a href="#" class="btn btn_light">В корзину</a>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="product-home">
+                       <div class="product-home__img"><img src="img/categories/popular/popular-2.jpg" alt="img product"></div>
+                       <div class="product-home__description">
+                           <div class="product-home__name">Наименование товара</div>
+                           <div class="product-home__price">2250 р.</div>
+                           <div class="product-home__btn-wrap">
+                               <a href="#" class="btn btn_light">В корзину</a>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="product-home">
+                       <div class="product-home__img"><img src="img/categories/popular/popular-3.jpg" alt="img product"></div>
+                       <div class="product-home__description">
+                           <div class="product-home__name">Наименование товара</div>
+                           <div class="product-home__price">2250 р.</div>
+                           <div class="product-home__btn-wrap">
+                               <a href="#" class="btn btn_light">В корзину</a>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="product-home">
+                       <div class="product-home__img"><img src="img/categories/popular/popular-4.jpg" alt="img product"></div>
+                       <div class="product-home__description">
+                           <div class="product-home__name">Наименование товара</div>
+                           <div class="product-home__price">2250 р.</div>
+                           <div class="product-home__btn-wrap">
+                               <a href="#" class="btn btn_light">В корзину</a>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="product-home">
+                       <div class="product-home__img"><img src="img/categories/popular/popular-2.jpg" alt="img product"></div>
+                       <div class="product-home__description">
+                           <div class="product-home__name">Наименование товара</div>
+                           <div class="product-home__price">2250 р.</div>
+                           <div class="product-home__btn-wrap">
+                               <a href="#" class="btn btn_light">В корзину</a>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="review">
+                <div class="content-title">Ваш отзыв</div>  
+                <p class="content-description">Ваш e-mail не будет опубликован. Обязательные поля помечены *</p>
+                <form class="review-form">
+                    <div class="review-form__column">
+                        <div class="review-form__row">
+                            <label class="review-form__stars-label">Оценка</label>
+                            <select style="display: none">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <span class="review-form__stars">
+                                <ul class="product-review-top__stars">
+                                    <li class="product-review-top__stars-item">
+                                        <img src="img/icons/star-dark.svg" class="product-review-top__stars-image">
+                                    </li>
+                                    <li class="product-review-top__stars-item">
+                                        <img src="img/icons/star-dark.svg" class="product-review-top__stars-image">
+                                    </li>
+                                    <li class="product-review-top__stars-item">
+                                        <img src="img/icons/star-dark.svg" class="product-review-top__stars-image">
+                                    </li>
+                                    <li class="product-review-top__stars-item">
+                                        <img src="img/icons/star-dark.svg" class="product-review-top__stars-image">
+                                    </li>
+                                    <li class="product-review-top__stars-item">
+                                        <img src="img/icons/star-light.svg" class="product-review-top__stars-image">
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="review-form__row">
+                            <input type="" name="" placeholder="Ваше имя *" class="review-form__input">
+                        </div>
+                        <div class="review-form__row">
+                            <input type="" name="" placeholder="Ваш e-mail *" class="review-form__input">
+                        </div>
+                    </div>
+                    <div class="review-form__column">                        
+                        <textarea placeholder="Ваш отзыв *" class="review-form__textarea"></textarea>
+                    </div>                    
+                    <div class="review-form__row review-form__btn-wrap">
+                        <button class="btn btn_dark">Отправить</button>
+                    </div>                    
+                </form>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="user-review">
+                <div class="content-title">Отзывы</div>             
+                <div class="user-review__wrap">
+
+                </div> 
+            </div>
         </div>
     </section>
     <footer class="footer">
@@ -132,6 +286,17 @@
             </div>
         </div>
     </footer>
-    <script src="js/script_slider.js"></script>
+    <!-- <script src="js/script_slider.js"></script> -->
+    <script>
+        $(document).ready(function(){
+          $('.js-slick-products').slick({
+                prevArrow: '<button type="button" class="product-home__prev-btn"><img src="img/icons/arrow-left.svg"></button>',
+                nextArrow: '<button type="button" class="product-home__next-btn"><img src="img/icons/arrow-right.svg"></button>',
+                infinite: false,
+                slidesToShow: 4,
+                slidesToScroll: 4
+            });
+        });
+    </script>
 </body>
 </html>

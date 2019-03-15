@@ -23,6 +23,17 @@ body {
     font-size: 10px;
     width: 100vw;
     overflow-x: hidden;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: normal;
+    color: #44515B;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -36,13 +47,13 @@ body {
 }
 
 .before-load {
-  position: absolute; /*фиксированное положение блока*/
-  left: 0; /*положение элемента слева*/
-  top: 0; /*положение элемента сверху*/
-  right: 0; /*положение элемента справа*/
-  bottom: -20px; /*положение элемента снизу*/
-  background: #F6F0F2; /*цвет заднего фона блока*/
-  z-index: 1001; /*располагаем его над всеми элементами на странице*/
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  right: 0; 
+  bottom: -20px; 
+  background: #F6F0F2; 
+  z-index: 1001; 
 }
 
 .loader {
@@ -50,8 +61,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 6px solid #fff; /* Light grey */
-    border-top: 6px solid #B87878; /* Blue */
+    border: 6px solid #fff; 
+    border-top: 6px solid #B87878; 
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -61,4 +72,60 @@ body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.content-title {
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 2.4rem;
+    color: #B87878;
+    position: relative;
+    padding-top: 2rem;
+    margin: 5rem 0 2rem 10rem;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 230px;
+        height: 1px;
+        background: #9791A0;
+        margin-bottom: 16px;
+        top: 0;
+        left: 0;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem 3rem;    
+    border-radius: 100px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;  
+    text-decoration: none;  
+
+    &_light {
+        border: 1px solid #9791A0;
+        background: #fff;
+        color: #44515C;
+    }
+
+    &_dark {
+        border: 1px solid #925757;
+        background: #925757;
+        color: #FFFFFF;
+    }
+}
+
+.content-description {
+    margin: -1rem 0 2rem 10rem;
+    font-size: 1.4rem;
+    color: #44515B;
 }
