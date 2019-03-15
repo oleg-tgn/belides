@@ -10,7 +10,9 @@
     }
 
     &__column-first {
-        width: 48.8rem;
+        @media @desktop {
+            width: 48.8rem;
+        }
 
         @media @tablet {
             width: 38rem;
@@ -21,8 +23,11 @@
     &__column-second {
         display: flex;
         align-items: baseline;
-        width: ~"calc(100% -  48.8rem)";
-        padding-left: 5rem;
+
+        @media @desktop {
+            width: ~"calc(100% -  48.8rem)";
+            padding-left: 5rem;
+        }
 
         @media @tablet {
             width: ~"calc(100% -  40rem)";
@@ -34,7 +39,15 @@
 
 .product-preview {
     display: flex;
-    margin-bottom: 4rem;
+    flex-wrap: wrap;
+
+    @media @tablet, @desktop {
+        margin-bottom: 4rem;
+    }
+
+    @media @mobile {
+        margin-bottom: 2rem;
+    }
 
     &__main {
         display: flex;
@@ -47,6 +60,11 @@
         @media @tablet {
             width: 30rem;
         }
+
+        @media @mobile {
+            width: 100%;
+            margin-top: 2rem;
+        }
     }
 
     &__main-image {
@@ -57,9 +75,16 @@
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
         list-style-type: none;
+
+        @media @tablet, @desktop {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        @media @mobile {
+             flex-direction: row;
+        }
     }
 
     &__list-item {
@@ -72,6 +97,12 @@
         @media @tablet {
             width: 6.1rem;
             height: 6.1rem;
+        }
+
+        @media @mobile {
+            width: ~"calc(100% / 5)";
+            height: auto;
+            margin-top: .2rem;
         }
     }
 
@@ -87,15 +118,31 @@
     &__title {
         display: block;
         width: 100%;
-        font-size: 2.4rem;
         color: #925757;
+        font-weight: 300;
+
+        @media @desktop, @tablet {
+            font-size: 2.4rem;
+        }
+
+        @media @mobile {
+            font-size: 1.8rem;
+        }
     }
 
     &__subtitle {
         display: block;
         width: 100%;
         font-size: 1.4rem;
-        margin-top: 1.4rem;
+        font-weight: 300;
+
+        @media @tablet, @desktop {
+            margin-top: 1.4rem;
+        }
+
+        @media @mobile {
+             margin-top: .5rem;
+        }
     }
 
     &__description {
@@ -108,7 +155,13 @@
     }
 
     &__description-left {
-        width: 60%;
+        @media @tablet, @desktop {
+            width: 60%;
+        }
+
+        @media @mobile {
+            width: 100%;
+        }
     }
 
     &__price-wrap {
@@ -119,6 +172,10 @@
         flex-direction: row;
         justify-content: space-between;
         border-top: .1rem solid #D8AEAE;
+
+        @media @mobile {
+            margin-bottom: 3rem;
+        }
     }
 
     &__price { 
@@ -161,7 +218,11 @@
         }
 
         @media @tablet {
-             margin-top: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        @media @mobile {
+            margin-top: 2rem;
         }
     }
 
@@ -181,6 +242,11 @@
         @media @tablet {
             margin-right: 1rem;
             margin-bottom: .5rem;
+        }
+
+        @media @mobile {
+            margin-right: 2.5rem;
+            margin-bottom: 2rem;
         }
 
         &.active {
@@ -204,6 +270,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+
+    @media @mobile {
+        width: 100%;
+    }
 
     &__image-wrap {
         width: 3.6rem;
@@ -232,9 +302,17 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 40%;
     justify-content: flex-end;
-    text-align: right;
+
+    @media @tablet, @desktop {
+        width: 40%;
+        text-align: right;
+    }
+
+    @media @mobile {
+        width: 100%;
+        margin-top: 2rem;
+    }
 
     &__link {
         font-size: 1.2rem;
@@ -253,6 +331,10 @@
 }
 
 .product-info-text {
+    @media @mobile {
+        margin-top: 2rem;
+    }
+
     &__title {
         font-weight: bold;
         font-size: 1.2rem;
@@ -292,13 +374,26 @@
 }
 
 .review-form {
-    margin: 0 -5rem;
     display: flex;
     flex-wrap: wrap;
 
+    @media @tablet, @desktop {
+        margin: 0 -5rem;
+    }
+
+    @media @mobile {
+        padding: 0 1.5rem;
+    }
+
     &__column {
-        width: 50%;
-        padding: 0 5rem;
+        @media @tablet, @desktop {
+            width: 50%;
+            padding: 0 5rem;            
+        }
+
+        @media @mobile {
+            width: 100%;
+        }
     }
 
     &__stars-label {
@@ -341,11 +436,19 @@
 
     &__textarea {
         height: 100%;
+
+        @media @mobile {
+             height: 15rem;
+        }
     }
 
     &__btn-wrap {
         text-align: right;
         padding: 2.4rem 7rem 0;
+
+        @media @mobile {
+            padding-right: 0;
+        }
     }
 }
 
@@ -355,16 +458,31 @@
     &__wrap {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -2.5rem;
-        height: 20rem;
+
+        @media @tablet, @desktop {
+            height: 20rem;    
+            margin: 0 -2.5rem;
+        }
+
+        @media @mobile {
+            margin: 0;
+        }
     }
 
-    &__item {
-        width: ~"calc(100% / 3 - 2.5rem)";
+    &__item {        
         margin: 0 1.24rem;
         background: #fff;
         padding: 2rem;
         position: relative;
+
+        @media @tablet, @desktop {
+            width: ~"calc(100% / 3 - 2.5rem)";
+        }
+
+        @media @mobile {
+            width: 100%;
+            margin: 1rem 0;
+        }
     }
 
     &__row {

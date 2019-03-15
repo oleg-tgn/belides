@@ -46,8 +46,12 @@ img {
     max-width: 1100px; 
     margin: 0 auto;
 
-    @media @tablet, @mobile {
+    @media @tablet {
       padding: 2.5rem 2.5rem;
+    }
+
+    @media @mobile {
+        padding: 2.5rem 1rem;
     }
 }
 
@@ -88,11 +92,21 @@ img {
     font-size: 2.4rem;
     color: #B87878;
     position: relative;
-    padding-top: 2rem;
     margin: 5rem 0 2rem 10rem;
+
+    @media @tablet, @desktop {
+        font-size: 2.4rem;
+        padding-top: 2rem;
+    }
 
     @media @tablet {
         margin-top: 2rem;
+    }
+
+    @media @mobile {
+        font-size: 1.8rem;
+        margin-left: 3.5rem;
+        padding-top: 1.6rem;
     }
 
     &::before {
@@ -131,10 +145,21 @@ img {
         background: #925757;
         color: #FFFFFF;
     }
+
+    &_small-mobile {
+        @media @mobile {
+            padding: .5rem 1rem; 
+            font-size: 10px; 
+        }
+    }
 }
 
 .content-description {
     margin: -1rem 0 2rem 10rem;
     font-size: 1.4rem;
     color: #44515B;
+
+    @media @mobile {
+        margin-left: 3.5rem;
+    }
 }
