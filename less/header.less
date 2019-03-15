@@ -21,15 +21,19 @@
     }
 
     .container {
+        @media @tablet, @mobile {
+            padding: 0;
+        }
+
         &_page {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-        }
 
-        @media @tablet, @mobile {
-            padding: 0;
-        }
+            @media @tablet {
+                padding: 0 2rem;
+            }
+        }        
     }    
 
     &__main {
@@ -151,7 +155,7 @@
             align-self: center;
             font-size: 0;
 
-            @media @desktop {
+            @media @desktop, @tablet {
                 width: 7.7rem;
             }
         }
