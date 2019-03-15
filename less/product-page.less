@@ -298,3 +298,55 @@
         padding: 2.4rem 7rem 0;
     }
 }
+
+.user-review {
+    margin-bottom: 6rem; 
+    
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -2.5rem;
+        height: 20rem;
+    }
+
+    &__item {
+        width: ~"calc(100% / 3 - 2.5rem)";
+        margin: 0 1.24rem;
+        background: #fff;
+        padding: 2rem;
+        position: relative;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .product-review-top__stars {
+            margin-top: 0;
+        }
+    }
+
+    &__text {
+        margin-top: 3rem;
+    }
+
+    &__date {
+        position: absolute;
+        bottom: 1.8rem;
+        right: 2rem;
+        text-align: right;
+    }
+
+    &__more {
+        text-align: center;
+        padding-top: 2.5rem;
+    }
+
+    &__more-link {
+        text-decoration: underline;
+    }
+}
