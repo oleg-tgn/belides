@@ -1,23 +1,24 @@
 @import "vars.less";
 
 .breadcrumbs {
-    display: inline-block;
-    font-size: 0;
-
-    &__item {
-        display: inline-block;
+    nav {
         font-family: Montserrat;
+        display: inline-block;
+        padding-right: 2rem;
+        position: relative;
+        color: #44515B;
+        font-size: 14px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
-        font-size: 14px;
+    }
+
+    a {
+        display: inline-block;
         text-decoration-line: underline;
         color: #44515B;
 
         &:not(:last-child) {
-            padding-right: 2rem;
-            position: relative;
-
             &::after {
                 content: "";
                 position: absolute;
@@ -36,9 +37,5 @@
         &:not(:first-child) {
             padding-left: 1.6rem;
         }
-    }
-
-    &__link {
-        color: #44515B;
     }
 }
