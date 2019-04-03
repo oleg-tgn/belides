@@ -1,0 +1,149 @@
+@import "vars.less";
+
+.hide-mobile {
+    display: block;
+
+    @media @mobile {
+        display: none;
+    }
+}
+
+.only-mobile {
+    display: none;
+
+    @media @mobile {
+        display: block;
+    }
+}
+
+.basket-table {
+    width: 100%;
+    margin-top: 3.5rem;
+    font-family: Montserrat;
+    line-height: normal;
+    border: 0;
+    border-spacing: 0;
+    margin-bottom: 1rem;
+
+    th {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: normal;
+        color: #925757;
+        text-align: left;
+        padding: 1.5rem 2rem;
+        vertical-align: top;
+
+        @media @mobile {
+            font-size: 13px;
+            padding: .75rem 1rem;
+        }
+    }
+
+    tbody {
+        background: #fff;
+    }
+
+    td {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #44515B;
+        padding: 1.5rem 2rem;
+        vertical-align: top;
+
+        @media @mobile {
+            font-size: 12px;
+            padding: .75rem 1rem;
+        }
+    }
+
+    tr:hover {
+        background: #F6F0F2;
+    }
+}
+
+.basket-options {
+    list-style-type: none;
+
+    li {
+        display: block;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: normal;
+        margin-top: 1rem;
+        color: #44515B;
+
+        @media @mobile {
+            font-size: 10px;
+            margin-top: .5rem;
+        }
+    }
+}
+
+.basket-btn-count {
+    display: inline-block;
+    width: 2.3rem;
+    height:  2.3rem;
+    border: .1rem solid #D8AEAE;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    vertical-align: top;
+
+    @media @mobile {
+        display: block;
+        margin: 0 auto;
+    }
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.basket-price {
+    line-height: 2.3rem;
+    padding: 0 2rem;
+    display: inline-block;
+    vertical-align: top;
+
+    @media @mobile {
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+}
+
+.basket-sum {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.basket-sum-label {
+    display: inline-block;
+    font-size: 16px;
+    color: #44515B;
+    vertical-align: middle;
+    margin-right: 18rem;
+
+    @media @mobile {
+        margin-right: 4rem;
+    }
+}
+
+.basket-sum-value {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 24px;
+    color: #44515B;
+    vertical-align: middle;
+
+    @media @mobile {
+        font-size: 1.8rem;
+    }
+}

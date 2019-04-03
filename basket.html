@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belides</title>   
+    <script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header header_page">
+        <div class="container container_page">
+            <a href="index.html" class="header__logo header__logo_page">
+                <img src="img/icons/logo-footer.png" alt="">
+            </a>
+            <a href="" class="header-card">
+                <span class="header-card__price">2000 р.</span>
+                <span class="header-card__truck">
+                    <img src="img/icons/card.svg">
+                </span>
+            </a>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container">
+            <div class="breadcrumbs">
+                <nav>
+                    <a href="index.html">Главная</a>
+                    Наименование товара
+                </nav>
+            </div>
+            
+            <table class="basket-table">
+                <thead>
+                    <tr>
+                        <th>Наименование товара</th>
+                        <th>Цена</th>
+                        <th class="hide-mobile">Количество</th>
+                        <th class="only-mobile">Кол.</th>
+                        <th>Сумма</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Наименование товара 1
+                            <ul class="basket-options">
+                                <li>Высота розы, см - 70</li>
+                                <li>Упаковка - корзина</li>
+                                <li>Доп. зелень - нет</li>
+                            </ul>
+                        </td>
+                        <td>2500р.</td>
+                        <td><a href="#" class="basket-btn-count"><img src="img/basket/minus.svg"></a>
+                            <span class="basket-price">2</span> 
+                            <a href="#" class="basket-btn-count"><img src="img/basket/plus.svg"></a>
+                        </td>
+                        <td>5000р.</td>
+                    </tr>
+                    <tr>
+                        <td>Наименование товара 2</td>
+                        <td>2500р.</td>
+                        <td><a href="#" class="basket-btn-count">
+                            <img src="img/basket/minus.svg"></a> <span class="basket-price">1</span> 
+                            <a href="#" class="basket-btn-count"><img src="img/basket/plus.svg"></a>
+                        </td>
+                        <td>2500р.</td>
+                    </tr>
+                    <tr>
+                        <td>Наименование товара 3</td>
+                        <td>2500р.</td>
+                        <td><a href="#" class="basket-btn-count">
+                            <img src="img/basket/minus.svg"></a> <span class="basket-price">1</span> 
+                            <a href="#" class="basket-btn-count"><img src="img/basket/plus.svg"></a>
+                        </td>
+                        <td>2500р.</td>
+                    </tr>
+                </tbody>
+            </table>  
+
+            <hr>
+
+            <div class="basket-sum">
+                <span class="basket-sum-label">Всего</span>
+                <span class="basket-sum-value">10 000р.</span>
+            </div>          
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__container">
+            <a href="index.html" class="footer__logo">
+                <img src="img/icons/logo-footer.png" alt="">
+            </a>
+            <div class="footer__description">
+                <p class="footer__description-info">Заказ цветов с доставкой</p>
+                <a href="tel:88888888888" class="footer__phone">8 (888) 888 88-88</a>
+            </div>
+            <div class="footer__social">
+                <a href="http://vk.com" class="footer__social-link" target="_blank"><img src="img/icons/vk-footer.svg" alt=""></a>
+                <a href="http://instagram.com" class="footer__social-link" target="_blank"><img src="img/icons/insta-footer.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script-slider.js"></script>
+</body>
+</html>
