@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('.js-slick-products').slick({
-        prevArrow: '<button type="button" class="product-home__prev-btn"><img src="img/icons/arrow-left.svg"></button>',
-        nextArrow: '<button type="button" class="product-home__next-btn"><img src="img/icons/arrow-right.svg"></button>',
+        prevArrow: '<button type="button" class="product-home__prev-btn"><i class="icon-arrow-left"></i></button>',
+        nextArrow: '<button type="button" class="product-home__next-btn"><i class="icon-arrow-right"></i></button>',
         infinite: false,
         slidesToShow: 4,
         slidesToScroll: 4,
