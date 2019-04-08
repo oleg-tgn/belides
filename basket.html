@@ -89,14 +89,82 @@
                 <span class="basket-sum-value">10 000р.</span>
             </div>    
 
-            <form action="" >
+            <form action="" class="basket-form">
                 <div class="basket-form-wrap">
-                    <div action=""  class="basket-form">
+                    <div class="basket-form__column">
+                        <div class="content-title">Подарки</div>
+                        
                         <input type="text" placeholder="Ваше имя">
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="anon" class="checkbox"><label for="anon">Анонимно</label>
+                        </div>
+
                         <input type="text" placeholder="E-mail">
                         <input type="text" placeholder="Телефон *">
-                        <button class="btn btn_light btn_small-mobile">Отправить</button>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="recipient" class="checkbox"><label for="recipient">Получатель — другой человек</label>
+                        </div>
+                        <span class="basket-form__small-label">Поставьте галочку, если получать заказ будете не Вы</span>
                     </div>
+
+                    <div class="basket-form__column">
+                        <div class="content-title">Записка к букету</div>
+ 
+                        <textarea placeholder="Напишите текст записки и мы приложим его к букету"></textarea>                     
+                    </div>
+
+                    <div class="basket-form__column">
+                        <div class="content-title">Доставка</div>                        
+                        <select class="error">
+                            <option>Выберите город *</option>
+                            <option>Москва</option>
+                            <option>Санкт-Петербург</option>
+                        </select>
+                        <div class="error-message">
+                            <span>!</span> Обязательное поле
+                        </div>
+                        <textarea class="textarea-small" placeholder="Адрес доставки *"></textarea>
+                        <div class="basket-form__row">
+                            <div class="basket-form__date">
+                                <input type="text" placeholder="Дата *">
+                            </div>
+                            <div class="basket-form__date">
+                                <input type="text" placeholder="Время *">
+                            </div>
+                        </div>                        
+                        <textarea class="textarea-small" placeholder="Комментарий к заказу"></textarea>
+                    </div>
+
+                     <div class="basket-form__column">
+                        <div class="content-title">Способ оплаты</div>
+                            <div class="radio-group-wrap">          
+                                <div class="radio-group">
+                                    <input name="payment" type="radio" id="payment_money" class="radio" checked><label for="payment_money">Наличными</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input name="payment" type="radio" id="payment_sberbank" class="radio"><label for="payment_sberbank">На карту “Сбербанка”</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input name="payment" type="radio" id="payment_qiwi" class="radio"><label for="payment_qiwi">Qiwi</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input name="payment" type="radio" id="payment_paypal" class="radio"><label for="payment_paypal">PayPal</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="basket-form__result">
+                        <span class="basket-form__result-label">Стоимость с учетом доставки</span>
+                        <span class="basket-form__result-money">10 000р.</span>
+                        <button class="btn btn_dark">Оформить заказ</button>
+                    </div>
+
+
                 </div>    
             </form> 
         </div>
