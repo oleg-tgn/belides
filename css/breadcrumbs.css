@@ -1,0 +1,32 @@
+.breadcrumbs nav {
+  font-family: Montserrat;
+  display: inline-block;
+  padding-right: 2rem;
+  position: relative;
+  color: #44515B;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.breadcrumbs a {
+  display: inline-block;
+  text-decoration-line: underline;
+  color: #44515B;
+}
+.breadcrumbs a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../img/icons/arrow-breadcrumbs.svg);
+  width: 6px;
+  height: 4px;
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+.breadcrumbs a:not(:first-child) {
+  padding-left: 1.6rem;
+}

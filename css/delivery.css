@@ -1,0 +1,102 @@
+.delivery {
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .delivery {
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .delivery {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+.delivery__line {
+  width: 150px;
+  height: 1px;
+  background: #9791A0;
+}
+.delivery h2 {
+  width: 365px;
+  height: 29px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 24px;
+  color: #925757;
+  padding-top: 15px;
+}
+@media (min-width: 1025px) {
+  .delivery__column {
+    float: left;
+    width: 463px;
+  }
+  .delivery__column_left {
+    margin-right: 15rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .delivery__column {
+    width: 100%;
+  }
+}
+.delivery li {
+  position: relative;
+  list-style-type: none;
+}
+.delivery h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 20px;
+  color: #925757;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.delivery p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 16px;
+  color: #293844;
+  margin-bottom: 15px;
+}
+.icon-delivery {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  left: -69px;
+}
+.icon-car {
+  background-image: url('../img/delivery/delivery.svg');
+}
+.icon-time {
+  background-image: url('../img/delivery/time.svg');
+}
+.icon-repeat {
+  background-image: url('../img/delivery/repeat.svg');
+}
+.icon-geo {
+  background-image: url('../img/delivery/geo.svg');
+}
+.icon-gift {
+  background-image: url('../img/delivery/gift.svg');
+}
+.icon-card {
+  background-image: url('../img/delivery/card.svg');
+}
+.icon-rub {
+  background-image: url('../img/delivery/rub.svg');
+}
+.icon-clock {
+  background-image: url('../img/delivery/clock.svg');
+}
